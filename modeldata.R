@@ -104,8 +104,3 @@ predictores <- rbind(esco,etp,evi,hsoil,ndvi,pp,savi,temp)
 malaria <- malaria %>% select(id,codigo,district,variable,valor,year,month)
 alldataset <- rbind(malaria,predictores)
 saveRDS(object = alldataset,'alldataset.rds')
-
-
-
-
-
