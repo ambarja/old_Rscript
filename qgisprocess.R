@@ -33,4 +33,3 @@ data <- read_rds('malaria_basins.rds')
 region <- st_read('district.gpkg')
 newdata <- malaria_regions(bd_malaria = data,splayer = region)
 saveRDS(object = newdata,'malaria_newdataset.rds')
-
